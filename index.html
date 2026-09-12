@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中国关键词（一带一路篇）· 互动注释读本</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero home-hero">
+  <div class="seal">李昀庆<br>注释</div>
+  <p class="home-series">互动注释读本 · HSK 4–5 · 俄语生词注释</p>
+  <h1 class="title home-title">中国关键词</h1>
+  <p class="home-sub">（一带一路篇）</p>
+  <p class="title-ru">«Ключевые слова Китая: Один пояс — один путь»</p>
+</header>
+
+<figure class="illustration hero-img">
+  <img src="assets/globe.png" alt="“一带一路”全球合作插画">
+</figure>
+
+<main class="toc">
+  <h2>目录 · Содержание</h2>
+
+  <a class="toc-card" href="section1.html">
+    <span class="toc-num">第一节</span>
+    <div class="toc-info">
+      <h3>一带一路</h3>
+      <p class="toc-py">Yídài-Yílù</p>
+      <p class="toc-ru">«Один пояс — один путь»: содержание инициативы, принципы и результаты сотрудничества</p>
+    </div>
+    <img class="toc-thumb" src="assets/train.png" alt="中欧班列">
+    <span class="toc-go">开始阅读 →</span>
+  </a>
+
+  <a class="toc-card" href="section2.html">
+    <span class="toc-num">第二节</span>
+    <div class="toc-info">
+      <h3>丝绸之路经济带</h3>
+      <p class="toc-py">sīchóu zhī lù jīngjìdài</p>
+      <p class="toc-ru">Экономический пояс Шёлкового пути: от Чжан Цяня до инициативы 2013 года</p>
+    </div>
+    <img class="toc-thumb" src="assets/zhangqian.png" alt="张骞出使西域壁画">
+    <span class="toc-go">开始阅读 →</span>
+  </a>
+</main>
+
+<section class="home-about">
+  <h2>使用说明 · Как пользоваться</h2>
+  <ul>
+    <li>点击正文中的<span class="w demo">红色生词</span>，即可查看带声调的拼音和俄语释义；</li>
+    <li>点击“★ 收入生词本”，生词会保存在本机浏览器中，各节内容共用一个生词本；</li>
+    <li>每节末尾附有完整词语表；第一节还配有口语讨论话题、参考答案和观点句型。</li>
+  </ul>
+</section>
+
+<footer>
+  <p>《中国关键词（一带一路篇）》互动注释读本 · 李昀庆 注释 · 生词本保存在本机浏览器</p>
+</footer>
+
+<!-- 生词本抽屉 -->
+<button id="notebook-btn" class="notebook-btn">📖 生词本 <span id="nb-count">0</span></button>
+<div id="drawer" class="drawer">
+  <div class="drawer-head">
+    <h3>📖 我的生词本</h3>
+    <button id="drawer-close" class="popup-close" aria-label="关闭">×</button>
+  </div>
+  <p class="drawer-tip">生词保存在本机浏览器中，刷新页面也不会丢失。</p>
+  <ul id="notebook-list" class="notebook-list"></ul>
+</div>
+<div id="drawer-mask" class="drawer-mask hidden"></div>
+
+<script src="vocab.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
