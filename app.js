@@ -8,7 +8,7 @@
     }
   } catch (e) {}
 
-  const ALL_VOCAB = Object.assign({}, VOCAB1, VOCAB2, DISCUSS_VOCAB);
+  const ALL_VOCAB = Object.assign({}, VOCAB1, VOCAB2, VOCAB3, DISCUSS_VOCAB);
 
   function $(id) { return document.getElementById(id); }
 
@@ -133,7 +133,7 @@
   const ol = $("vocab-list");
   if (ol) {
     const listName = document.body.dataset.vocab || "VOCAB1";
-    const lists = { VOCAB1, VOCAB2, DISCUSS_VOCAB };
+    const lists = { VOCAB1, VOCAB2, VOCAB3, DISCUSS_VOCAB };
     const data = lists[listName] || VOCAB1;
     Object.keys(data).forEach(word => {
       const li = document.createElement("li");
